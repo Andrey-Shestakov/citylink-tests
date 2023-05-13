@@ -17,28 +17,28 @@
  *
  */
 
- /**
-	* Класс сотрудника
-	*
-	* @property int $id Идентификатор сотрудника
-	* @property string $login Логин сотрудника
-	* @property string $area_name Наименование сотрудника
-	*	
-	* @method void __construct() Конструктор класса
-	* @method int get_id() Получение идентификатор сотрудника
-	* @method string get_login() Получение логина сотрудника
-	* @method string get_area_name() Наименование региона
-	* @method void set_data() Установка значений для сотрудника
-	* @method mixed get_data() Получение данных из псевдо-БД
-	* @method array get_areas_data() Массив данных по региону
-	* @method mixed get_area_data_by_area_id(int $area_id) Получение данных по региону череш идентификатор региона
-	* @method array get_nearby_areas_data() Получение данных по соседним регионам
-	* @method array get_workers_data() Получение данных по сотрудникам
-	* @method array get_nearby_areas_by_area_id(int $area_id) Получение идентификаторов соседних регионов
-	* @method mixed get_login_by_area(string $area_title) Получение логина сотрудника по наименованию региона
-	* @method array get_logins_in_nearby_areas(string $area_title) Получение массива логинов ближайших сотрудников
-	* @method mixed get_area_id_by_title(string $area_title)  Получение идентификатор региона по наименованию
-  */
+/**
+ * Класс сотрудника
+ *
+ * @property int $id Идентификатор сотрудника
+ * @property string $login Логин сотрудника
+ * @property string $area_name Наименование сотрудника
+ *	
+ * @method void __construct() Конструктор класса
+ * @method int get_id() Получение идентификатор сотрудника
+ * @method string get_login() Получение логина сотрудника
+ * @method string get_area_name() Наименование региона
+ * @method void set_data() Установка значений для сотрудника
+ * @method mixed get_data() Получение данных из псевдо-БД
+ * @method array get_areas_data() Массив данных по региону
+ * @method mixed get_area_data_by_area_id(int $area_id) Получение данных по региону череш идентификатор региона
+ * @method array get_nearby_areas_data() Получение данных по соседним регионам
+ * @method array get_workers_data() Получение данных по сотрудникам
+ * @method array get_nearby_areas_by_area_id(int $area_id) Получение идентификаторов соседних регионов
+ * @method mixed get_login_by_area(string $area_title) Получение логина сотрудника по наименованию региона
+ * @method array get_logins_in_nearby_areas(string $area_title) Получение массива логинов ближайших сотрудников
+ * @method mixed get_area_id_by_title(string $area_title)  Получение идентификатор региона по наименованию
+ */
 class Worker {
 	private int $id;
 	private string $login;
