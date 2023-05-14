@@ -8,7 +8,7 @@ try {
     $handler_output_data['members'] = [];
     foreach ($input_members as $input_member_index => $input_member_name) {
       if (!empty($input_member_name)) {
-        if (preg_match('/[а-яa-z\,]+/iu')) {
+        if (preg_match('/[а-яa-z\,]+/iu', $input_member_name)) {
           array_push($handler_output_data['members'], [
             'id' => $input_member_index + 1,
             'name' => $input_member_name,
@@ -20,7 +20,7 @@ try {
       }
     }
 
-    $handler_status = (isset($handler_status)) ? $handler_status : 'Список участников получен.';
+    $handler_message = (isset($handler_message)) ? $handler_message : 'Список участников получен.';
   } else {
     $handler_message = 'Невозможно обработать запрос, так как список участников пуст.';
   }
